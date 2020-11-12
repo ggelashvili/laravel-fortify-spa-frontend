@@ -6,6 +6,7 @@ import DisableTwoFA from '@components/disable-two-fa'
 import EnableTwoFA from '@components/enable-two-fa'
 import ProfileInfo from '@components/profile-info'
 import PasswordInfo from '@components/password-info'
+import BrowserSessions from '@components/browser-sessions'
 
 const AccountPage = () => {
     const [twoFactorAuthEnabled, setTwoFactorAuthEnabled] = useState(false)
@@ -58,6 +59,9 @@ const AccountPage = () => {
                         </div>
                     </div>
                 </div>
+            </div>
+            <div className="mt-10">
+                <BrowserSessions />
             </div>
         </Layout>
     )

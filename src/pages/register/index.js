@@ -31,7 +31,7 @@ const RegisterPage = () => {
             <div className="max-w-md w-full">
                 <div>
                     <img className="mx-auto h-12 w-auto"
-                         src="https://tailwindui.com/img/logos/workflow-mark-on-white.svg" alt="Workflow" />
+                         src="https://tailwindui.com/img/logos/v1/workflow-mark-on-white.svg" alt="Workflow" />
                     <h2 className="mt-6 text-center text-3xl leading-9 font-extrabold text-gray-900">
                         Create Your New Account
                     </h2>

@@ -23,7 +23,7 @@ const Layout = ({title, children}) => {
                         <div className="flex items-center">
                             <div className="flex-shrink-0">
                                 <img className="h-8 w-8"
-                                     src="https://tailwindui.com/img/logos/workflow-mark-on-dark.svg"
+                                     src="https://tailwindui.com/img/logos/v1/workflow-mark-on-dark.svg"
                                      alt="Workflow logo" />
                             </div>
                             <div className="hidden md:block">

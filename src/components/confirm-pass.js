@@ -1,8 +1,6 @@
 import React, {useState} from 'react'
-import Input from '@components/input'
-import Button from '@components/button'
-import Modal from '@components/modal'
 import api from '@/util/api'
+import ConfirmPassModal from '@components/confirm-pass-modal'
 
 const ConfirmPass = ({confirming, setConfirming, onFail, onSuccess}) => {
     const [password, setPassword] = useState('')
@@ -18,17 +16,13 @@ const ConfirmPass = ({confirming, setConfirming, onFail, onSuccess}) => {
     }
 
     return (
-        <Modal isOpen={confirming}>
-            <div>
-                Confirm Password: {" "}
-                <Input type="password" name="password" value={password}
-                       onChange={e => setPassword(e.target.value)} />
-            </div>
-            <div className="flex justify-between pt-10">
-                <Button onClick={() => setConfirming(false)}>Cancel</Button>
-                <Button className="bg-green-400 text-white" onClick={confirm}>Confirm</Button>
-            </div>
-        </Modal>
+        <ConfirmPassModal
+            setConfirming={setConfirming}
+            confirming={confirming}
+            password={password}
+            setPassword={setPassword}
+            onConfirm={confirm}
+        />
     )
 }
 
